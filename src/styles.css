@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+
+.nav-link {
+    @apply flex items-center h-full text-slate-300 tracking-wider text-sm lg:text-base cursor-pointer shadow-black transition-all ease-in-out hover:text-white;
+}
+.active {
+    @apply text-slate-100 border-b-2 transition-all ease-in-out;
+
+}
+.input {
+    @apply border-gray-400 py-1 px-2 border rounded-md w-full mt-2
+}
+
+.label{
+    @apply text-sm
+}
+.tooltip {
+    @apply absolute top-14 xl:top-[60px] m-1 bg-slate-300 text-slate-950 text-sm px-1.5 rounded-full transition-all scale-0 ;
+}
+
+.btn {
+    @apply inline-flex items-center justify-center text-nowrap gap-2.5 px-3 py-2 rounded-3xl tracking-wider border border-slate-500 shadow-md text-xs lg:text-sm hover:bg-slate-600;
+}
+
+.btn-primary {
+    @apply text-slate-200 bg-slate-950;
+
+}
+
+.btn-outline {
+    @apply text-slate-500 bg-white hover:text-white;
+
+}
+.article{
+    @apply flex items-center justify-center gap-5 px-4 text-red-900 font-medium
+}
+
+@tailwind utilities;
