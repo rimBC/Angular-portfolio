@@ -5,16 +5,23 @@
 .nav-link {
     @apply flex items-center h-full text-slate-300 tracking-wider text-sm lg:text-base cursor-pointer shadow-black transition-all ease-in-out hover:text-white;
 }
+.nav-link2 {
+    @apply w-11/12 rounded-xl mb-1 h-12 p-6 flex items-center text-slate-400 tracking-wider text-sm lg:text-base cursor-pointer shadow-black transition-all ease-in-out hover:bg-slate-800;
+}
 .active {
     @apply text-slate-100 border-b-2 transition-all ease-in-out;
 
 }
+.active2 {
+    @apply text-slate-200 font-bold bg-slate-800 transition-all ease-in-out;
+
+}
 .input {
-    @apply border-gray-400 py-1 px-2 border rounded-md w-full mt-2
+    @apply border-gray-400 py-1 px-2 border rounded-md w-full mt-2 mb-3 sm:mb-2
 }
 
 .label{
-    @apply text-sm
+    @apply text-sm xl:font-medium 
 }
 .tooltip {
     @apply absolute top-14 xl:top-[60px] m-1 bg-slate-300 text-slate-950 text-sm px-1.5 rounded-full transition-all scale-0 ;

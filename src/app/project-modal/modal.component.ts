@@ -4,7 +4,7 @@ import { Project } from '../models/Project-interface';
 import { Technologies } from '../models/technologies';
 
 @Component({
-  selector: 'app-modal',
+  selector: 'app-project-modal',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './modal.component.html',
@@ -17,15 +17,10 @@ export class ModalComponent {
   @Output() emitLink = new EventEmitter();
   @Output() emitExit = new EventEmitter();
 
-  isHovered = false;
-  edit = false;
   isModalVisible:boolean = true;
 
-  openModal(){
-    this.isModalVisible = true;
-  }
   closeModal(){
-    this.isModalVisible = false;
+    this.emitExit.emit();
   }
 
   closeModalOutsideClick(event: MouseEvent){

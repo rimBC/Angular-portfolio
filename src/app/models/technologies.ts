@@ -9,6 +9,7 @@ export class Technologies{
     static readonly POSTGRES =  new Technologies('Postgres','#448aff')
     static readonly HTML =  new Technologies('HTML','#c05761')
     static readonly CSS =  new Technologies('CSS','#1565c0')
+    static readonly SP =  new Technologies('ACADEMIC PROJECT','#1565c0')
 
 
 
