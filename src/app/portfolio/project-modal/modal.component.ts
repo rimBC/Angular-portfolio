@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Project } from '../models/Project-interface';
-import { Technologies } from '../models/technologies';
+import { Project } from '../../models/Project-interface';
+import { Technologies } from '../../models/technologies';
+import { ImageSliderComponent } from "../../image-slider/image-slider.component";
 
 @Component({
   selector: 'app-project-modal',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ImageSliderComponent],
   templateUrl: './modal.component.html',
   styleUrl: './modal.component.css'
 })

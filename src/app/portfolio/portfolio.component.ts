@@ -4,7 +4,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectCardComponent } from "./project-card/project-card.component";
 import { Technologies } from '../models/technologies';
-import { ModalComponent } from '../project-modal/modal.component';
+import { ModalComponent } from './project-modal/modal.component';
+import { ImageSliderComponent } from "../image-slider/image-slider.component";
 
 
 @Component({

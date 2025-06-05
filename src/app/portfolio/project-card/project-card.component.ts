@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 export class ProjectCardComponent {
   noImageURL: String="./assets/noPreview.jpg";
   @Input() project!: Project
+  
 
 
 }
